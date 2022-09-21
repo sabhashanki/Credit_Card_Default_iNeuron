@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Default Prediction</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+
+</head>
+
+<body>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Credit Card Default Prediction</a>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+
+    <div class="container">
+
+        <h3>{{ prediction_text }}</h3>
+        <br>
+
+        <form action="\predict" method="post">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Account Number</h5>
+                            <input name="acc_no" type="number ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Credit Limit</h5>
+                            <input name="limit_bal" type="number ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Source -->
+                            <h5>Gender</h5>
+                            <select name="sex" required="required">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class = 'row'>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Age</h5>
+                            <input name="age" type="number ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Education</h5>
+                        <select name="education" required="required">
+                            <option value="middle_school">Middle School Graduate</option>
+                            <option value="high_school">High School Graduate</option>
+                            <option value="ug">College UG</option>
+                            <option value="pg">College PG</option>
+                            <option value="phd">PHD</option>
+                            <option value="others">Others</option>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Marriage</h5>
+                        <select name="marriage" required="required">
+                            <option value="married">Married</option>
+                            <option value="unmarried">Unmarried</option>
+                            <option value="others">Others</option>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class = 'row'>
+
+                <div class="card-body">
+                    <h5>Marriage</h5>
+                    <select name="marriage" required="required">
+                        <option value="married">Married</option>
+                        <option value="unmarried">Unmarried</option>
+                        <option value="others">Others</option>
+                </div>
+                
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Average Bill Amount in the past</h5>
+                            <input name="age" type="number ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit -->
+            <input type="submit" value="Submit" class="btn btn-secondary">
+        </form>
+        <br>
+        <p>©2022 Shankesh Raju MS</p>
+
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>

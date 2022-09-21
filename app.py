@@ -13,7 +13,8 @@ def home():
 
 @app.route('/predict', method = ['POST'])
 def predict():
-    limit_bal = int(request.form['LIMIT_BAL'])
+    acc_no = request.form(['acc_no'])
+    limit_bal = int(request.form['limit_bal'])
     sex = request.form(['sex'])
     age = request.form(['age'])
     education = request.form(['education'])
