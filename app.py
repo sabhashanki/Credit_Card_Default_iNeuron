@@ -26,6 +26,13 @@ def predict():
     pay_amt4 = request.form(['april_payment'])
     pay_amt5 = request.form(['may_payment'])
     pay_amt6 = request.form(['june_payment'])
-    predict = 
+    predict = model.predict([[limit_bal, sex, education, marriage, age
+                , pay, bill_amt, pay_amt1, pay_amt2, pay_amt3, pay_amt4
+                , pay_amt5, pay_amt6]])
+    return render_template('home.html', prediction_text = 'Credit Card Default Status : {}'.format(predict))
+
+
+if __name__ =+ '__main__':
+    app.run(debug = True)
 
 
