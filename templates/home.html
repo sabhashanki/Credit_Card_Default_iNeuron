@@ -89,6 +89,7 @@
                             <option value="pg">College PG</option>
                             <option value="phd">PHD</option>
                             <option value="others">Others</option>
+                            <option value="uneducated">Uneducated</option>
                     </div>
                 </div>
 
@@ -98,7 +99,8 @@
                         <select name="marriage" required="required">
                             <option value="married">Married</option>
                             <option value="unmarried">Unmarried</option>
-                            <option value="others">Others</option>
+                            <option value="divorced">Divorced</option>
+                            <option value="widowed">Widowed</option>
                     </div>
                 </div>
             </div>
@@ -108,18 +110,85 @@
             <div class = 'row'>
 
                 <div class="card-body">
-                    <h5>Marriage</h5>
-                    <select name="marriage" required="required">
-                        <option value="married">Married</option>
-                        <option value="unmarried">Unmarried</option>
-                        <option value="others">Others</option>
+                    <h5>Payment History</h5>
+                    <select name="payment_history" required="required">
+                        <option value="on_time">Paid on-time</option>
+                        <option value="advance_one">One month paid in advance</option>
+                        <option value="advance_two">Two months paid in advance</option>
+                        <option value="delay_one">One month delay</option>
+                        <option value="delay_two">Two months delay</option>
+                        <option value="delay_three">Three months delay</option>
+                        <option value="delay_four">Four months delay</option>
+                        <option value="delay_five">Five months delay</option>
+                        <option value="delay_six">Six months delay</option>
+                        <option value="delay_seven">Seven months delay</option>
+
                 </div>
                 
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
                             <h5>Average Bill Amount in the past</h5>
-                            <input name="age" type="number ">
+                            <input name="average_bill" type="number ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Amount paid in Jan</h5>
+                            <input name="jan_payment" type="number ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class = 'row'>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Amount paid in Feb</h5>
+                            <input name="feb_payment" type="number ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Amount paid in March</h5>
+                            <input name="march_payment" type="number ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Amount paid in April</h5>
+                            <input name="april_payment" type="number ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = 'row'>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Amount paid in May</h5>
+                            <input name="may_payment" type="number ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Amount paid in June</h5>
+                            <input name="june_payment" type="number ">
                         </div>
                     </div>
                 </div>
