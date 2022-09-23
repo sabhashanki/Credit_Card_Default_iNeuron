@@ -1,0 +1,38 @@
+Credit card ineuron project flow
+
+Approach:
+
+Data Exploration
+Data Cleaning
+Feature Engineering 
+Model Building
+Testing/Tuning
+Solution
+
+Code:
+
+Modular
+Testable        - code must be visible to test
+Maintanable     - even codebase grows
+Portable        - all environment(OS) - Dockers
+Github          - Public code
+Readme file     - basic overflow and project execution
+Response Time   - for the given input
+Cloud           - AWS, Azure
+Solution        - API format
+Python Logging  - for every action performed
+Pipeline        - MLflow
+Deployment      - cloud platform
+Docs            - HLD, LLD, Wireframe, architecture 
+Optimization    - mention all in final submission
+
+Submission
+
+HLD
+LLD
+Architecture
+Wireframe
+Code
+Project Report
+Demo Video
+LinkedIn Post
