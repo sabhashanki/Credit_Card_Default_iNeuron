@@ -5,8 +5,6 @@ body {
 
 header {
     font-family: 'Calibri', sans-serif;
-    padding-top: 10;
-    padding-bottom: 15;
     background-color: #ffffff;
     color: #2094f3;
 }
@@ -19,12 +17,12 @@ header {
 
 input {
     text-align: left;
-    width: 20%;
+    width: 40%;
     background-color: #ffffff;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 200px) {
     input {
-        width: 100%;
+        width: 50%;
     }
 }
