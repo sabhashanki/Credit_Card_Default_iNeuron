@@ -1,27 +1,25 @@
 body {
-    text-align: center;
+    text-align: left;
     background-color: #ffffff;
 }
 
 header {
     font-family: 'Calibri', sans-serif;
-    padding-top: 20;
-    padding-bottom: 20;
+    padding-top: 10;
+    padding-bottom: 15;
     background-color: #ffffff;
-    color: #000000;
+    color: #2094f3;
 }
 
 .btn {
-    background-color: #4193ff;
+    background-color: #5fa4ff;
     color: #000000;
 }
 
 
 input {
-    margin: 0.1rem;
-    border-radius: 0.1rem;
-    text-align: center;
-    width: 40%;
+    text-align: left;
+    width: 20%;
     background-color: #ffffff;
 }
 
